@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common AncientOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 $(call inherit-product, vendor/ancient/configs/common_full_phone.mk)
