@@ -101,12 +101,10 @@ void load_device_properties() {
     string description = "sunfish-user 11 RQ1A.210205.004 7038034 release-keys";
 
     if (hwname == "surya") {
-        set_device_props(fingerprint, description, "Poco", "surya", "M2007J20CG");
-        property_override("ro.wave.device_name", "POCO X3 NFC");
+        set_device_props(fingerprint, description, "POCO", "surya", "POCO X3 NFC");
         property_override("ro.product.mod_device", "surya_global");
     } else if (hwname == "karna") {
-        set_device_props(fingerprint, description, "Poco", "karna", "M2007J20CI");
-        property_override("ro.wave.device_name", "POCO X3");
+        set_device_props(fingerprint, description, "POCO", "karna", "POCO X3");
         property_override("ro.product.mod_device", "surya_in_global");
     }
 }
