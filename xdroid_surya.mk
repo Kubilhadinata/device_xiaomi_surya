@@ -22,22 +22,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# MiuiCamera
-$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
-
-# Inherit from common AncientOS configuration
+# Inherit from common configuration
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-
-# Use Background Blur
-TARGET_USES_BLUR := true
+# xdroid configuration
+XDROID_BUILD_TYPE := OBT
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
 
 # Device identifier
-PRODUCT_NAME := ancient_surya
+PRODUCT_NAME := xdroid_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 NFC
