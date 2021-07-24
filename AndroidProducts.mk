@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_surya.mk
+    $(LOCAL_DIR)/xdroid_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_surya-user \
-    nad_surya-userdebug \
-    nad_surya-eng
+    xdroid_surya-user \
+    xdroid_surya-userdebug \
+    xdroid_surya-eng
